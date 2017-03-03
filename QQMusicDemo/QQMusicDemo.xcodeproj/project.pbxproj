@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F40097D31E69401D000E0737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097D21E69401D000E0737 /* AppDelegate.swift */; };
+		F40097D81E69401D000E0737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40097D61E69401D000E0737 /* Main.storyboard */; };
+		F40097DA1E69401E000E0737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40097D91E69401E000E0737 /* Assets.xcassets */; };
+		F40097DD1E69401E000E0737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40097DB1E69401E000E0737 /* LaunchScreen.storyboard */; };
+		F40097FD1E694102000E0737 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097E81E694102000E0737 /* UIView+Extension.swift */; };
+		F40097FE1E694102000E0737 /* QQMusicDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097EA1E694102000E0737 /* QQMusicDataTool.swift */; };
+		F40097FF1E694102000E0737 /* QQMusicOperationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097EC1E694102000E0737 /* QQMusicOperationTool.swift */; };
+		F40098001E694102000E0737 /* QQMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097ED1E694102000E0737 /* QQMusicTool.swift */; };
+		F40098011E694102000E0737 /* QQTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097EE1E694102000E0737 /* QQTimeTool.swift */; };
+		F40098021E694102000E0737 /* QQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097F11E694102000E0737 /* QQDetailViewController.swift */; };
+		F40098031E694102000E0737 /* QQMusicMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097F31E694102000E0737 /* QQMusicMessageModel.swift */; };
+		F40098041E694102000E0737 /* QQListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097F71E694102000E0737 /* QQListViewController.swift */; };
+		F40098051E694102000E0737 /* QQMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097F91E694102000E0737 /* QQMusicModel.swift */; };
+		F40098061E694102000E0737 /* QQMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40097FB1E694102000E0737 /* QQMusicCell.swift */; };
+		F40098071E694102000E0737 /* QQMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40097FC1E694102000E0737 /* QQMusicCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F40097CF1E69401D000E0737 /* QQMusicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40097D21E69401D000E0737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F40097D71E69401D000E0737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F40097D91E69401E000E0737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F40097DC1E69401E000E0737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F40097DE1E69401E000E0737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40097E81E694102000E0737 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F40097EA1E694102000E0737 /* QQMusicDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicDataTool.swift; sourceTree = "<group>"; };
+		F40097EC1E694102000E0737 /* QQMusicOperationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicOperationTool.swift; sourceTree = "<group>"; };
+		F40097ED1E694102000E0737 /* QQMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTool.swift; sourceTree = "<group>"; };
+		F40097EE1E694102000E0737 /* QQTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQTimeTool.swift; sourceTree = "<group>"; };
+		F40097F11E694102000E0737 /* QQDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQDetailViewController.swift; sourceTree = "<group>"; };
+		F40097F31E694102000E0737 /* QQMusicMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicMessageModel.swift; sourceTree = "<group>"; };
+		F40097F71E694102000E0737 /* QQListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQListViewController.swift; sourceTree = "<group>"; };
+		F40097F91E694102000E0737 /* QQMusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicModel.swift; sourceTree = "<group>"; };
+		F40097FB1E694102000E0737 /* QQMusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicCell.swift; sourceTree = "<group>"; };
+		F40097FC1E694102000E0737 /* QQMusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQMusicCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F40097CC1E69401D000E0737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F40097C61E69401D000E0737 = {
+			isa = PBXGroup;
+			children = (
+				F40097D11E69401D000E0737 /* QQMusicDemo */,
+				F40097D01E69401D000E0737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F40097D01E69401D000E0737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F40097CF1E69401D000E0737 /* QQMusicDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F40097D11E69401D000E0737 /* QQMusicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F40097E51E694102000E0737 /* Classes */,
+				F40097D21E69401D000E0737 /* AppDelegate.swift */,
+				F40097E41E6940F1000E0737 /* resource */,
+			);
+			path = QQMusicDemo;
+			sourceTree = "<group>";
+		};
+		F40097E41E6940F1000E0737 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F40097D61E69401D000E0737 /* Main.storyboard */,
+				F40097D91E69401E000E0737 /* Assets.xcassets */,
+				F40097DB1E69401E000E0737 /* LaunchScreen.storyboard */,
+				F40097DE1E69401E000E0737 /* Info.plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		F40097E51E694102000E0737 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F40097E61E694102000E0737 /* Other */,
+				F40097EF1E694102000E0737 /* QQDetail */,
+				F40097F51E694102000E0737 /* QQMain */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F40097E61E694102000E0737 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F40097E71E694102000E0737 /* Category */,
+				F40097E91E694102000E0737 /* DataTool */,
+				F40097EB1E694102000E0737 /* Tool */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F40097E71E694102000E0737 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F40097E81E694102000E0737 /* UIView+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F40097E91E694102000E0737 /* DataTool */ = {
+			isa = PBXGroup;
+			children = (
+				F40097EA1E694102000E0737 /* QQMusicDataTool.swift */,
+			);
+			path = DataTool;
+			sourceTree = "<group>";
+		};
+		F40097EB1E694102000E0737 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F40097EC1E694102000E0737 /* QQMusicOperationTool.swift */,
+				F40097ED1E694102000E0737 /* QQMusicTool.swift */,
+				F40097EE1E694102000E0737 /* QQTimeTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F40097EF1E694102000E0737 /* QQDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F01E694102000E0737 /* Controller */,
+				F40097F21E694102000E0737 /* Model */,
+				F40097F41E694102000E0737 /* View */,
+			);
+			path = QQDetail;
+			sourceTree = "<group>";
+		};
+		F40097F01E694102000E0737 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F11E694102000E0737 /* QQDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F40097F21E694102000E0737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F31E694102000E0737 /* QQMusicMessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F40097F41E694102000E0737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F40097F51E694102000E0737 /* QQMain */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F61E694102000E0737 /* Controller */,
+				F40097F81E694102000E0737 /* Model */,
+				F40097FA1E694102000E0737 /* View */,
+			);
+			path = QQMain;
+			sourceTree = "<group>";
+		};
+		F40097F61E694102000E0737 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F71E694102000E0737 /* QQListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F40097F81E694102000E0737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F40097F91E694102000E0737 /* QQMusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F40097FA1E694102000E0737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F40097FB1E694102000E0737 /* QQMusicCell.swift */,
+				F40097FC1E694102000E0737 /* QQMusicCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F40097CE1E69401D000E0737 /* QQMusicDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F40097E11E69401E000E0737 /* Build configuration list for PBXNativeTarget "QQMusicDemo" */;
+			buildPhases = (
+				F40097CB1E69401D000E0737 /* Sources */,
+				F40097CC1E69401D000E0737 /* Frameworks */,
+				F40097CD1E69401D000E0737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQMusicDemo;
+			productName = QQMusicDemo;
+			productReference = F40097CF1E69401D000E0737 /* QQMusicDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F40097C71E69401D000E0737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = lijun;
+				TargetAttributes = {
+					F40097CE1E69401D000E0737 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MX22E64P3H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F40097CA1E69401D000E0737 /* Build configuration list for PBXProject "QQMusicDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F40097C61E69401D000E0737;
+			productRefGroup = F40097D01E69401D000E0737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F40097CE1E69401D000E0737 /* QQMusicDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F40097CD1E69401D000E0737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40097DD1E69401E000E0737 /* LaunchScreen.storyboard in Resources */,
+				F40097DA1E69401E000E0737 /* Assets.xcassets in Resources */,
+				F40097D81E69401D000E0737 /* Main.storyboard in Resources */,
+				F40098071E694102000E0737 /* QQMusicCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F40097CB1E69401D000E0737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40098021E694102000E0737 /* QQDetailViewController.swift in Sources */,
+				F40098041E694102000E0737 /* QQListViewController.swift in Sources */,
+				F40098061E694102000E0737 /* QQMusicCell.swift in Sources */,
+				F40097FD1E694102000E0737 /* UIView+Extension.swift in Sources */,
+				F40097FE1E694102000E0737 /* QQMusicDataTool.swift in Sources */,
+				F40097D31E69401D000E0737 /* AppDelegate.swift in Sources */,
+				F40097FF1E694102000E0737 /* QQMusicOperationTool.swift in Sources */,
+				F40098031E694102000E0737 /* QQMusicMessageModel.swift in Sources */,
+				F40098011E694102000E0737 /* QQTimeTool.swift in Sources */,
+				F40098001E694102000E0737 /* QQMusicTool.swift in Sources */,
+				F40098051E694102000E0737 /* QQMusicModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F40097D61E69401D000E0737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F40097D71E69401D000E0737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F40097DB1E69401E000E0737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F40097DC1E69401E000E0737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F40097DF1E69401E000E0737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F40097E01E69401E000E0737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F40097E21E69401E000E0737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = QQMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.QQMusicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F40097E31E69401E000E0737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MX22E64P3H;
+				INFOPLIST_FILE = QQMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qixin.cn.QQMusicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F40097CA1E69401D000E0737 /* Build configuration list for PBXProject "QQMusicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40097DF1E69401E000E0737 /* Debug */,
+				F40097E01E69401E000E0737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F40097E11E69401E000E0737 /* Build configuration list for PBXNativeTarget "QQMusicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40097E21E69401E000E0737 /* Debug */,
+				F40097E31E69401E000E0737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F40097C71E69401D000E0737 /* Project object */;
+}
