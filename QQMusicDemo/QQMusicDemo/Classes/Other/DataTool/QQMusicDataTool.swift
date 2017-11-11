@@ -31,5 +31,62 @@ class QQMusicDataTool: NSObject {
         //4.返回结果
         result(models)
     }
+    
+    class func getLrcModels(_ lrcName:String) ->[QQLrcModel]{
+        // 1. 获取歌词文件的路径
+        guard let path = Bundle.main.path(forResource: lrcName, ofType: nil) else {
+            return [QQLrcModel]()
+        }
+        // 2. 获取歌词文件的内容
+        var lrcContent : String?
+        do{
+            lrcContent = try String(contentsOfFile: path)
+        }catch{
+            
+            return [QQLrcModel]()
+        }
+        
+        if lrcContent == nil{
+            return [QQLrcModel]()
+        }
+        
+        // 3. 解析歌词
+        var lrcModelArray = [QQLrcModel]()
+        
+        let timeContentArray = lrcContent?.components(separatedBy: "\n");
+        
+        for timeContentStr in timeContentArray!{
+            if (timeContentStr.contains("[ti:") || timeContentStr.contains("[ar:") || timeContentStr.contains("[al:")){
+                continue;
+            }
+            let resultLrcStr = timeContentStr.replacingOccurrences(of: "[", with: "");
+            let timeAndLrc = resultLrcStr.components(separatedBy: "]");
+            if (timeAndLrc.count == 2){
+                let time = timeAndLrc[0];
+                let lrc = timeAndLrc[1];
+                let lrcModel = QQLrcModel();
+                lrcModel.startTime = QQTimeTool.getTime(time);
+                lrcModel.lrcContent = lrc;
+                lrcModelArray.append(lrcModel);
+            }
+        }
+        
+        for i in 0..<lrcModelArray.count {
+            if (i == lrcModelArray.count - 1){
+                break;
+            }
+            lrcModelArray[i].endTime = lrcModelArray[i+1].startTime;
+        }
+        return lrcModelArray;
+    }
+    
+    class func getRowLrcModel(_ lrcModels:[QQLrcModel], currentTime:TimeInterval) -> (row:Int, lrcM:QQLrcModel?){
+        for i in 0..<lrcModels.count {
+            if (currentTime > lrcModels[i].startTime && currentTime < lrcModels[i].endTime){
+                return (i,lrcModels[i]);
+            }
+        }
+        return (0,nil);
+    }
 
 }
